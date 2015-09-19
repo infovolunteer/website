@@ -1,5 +1,11 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+public_assets/*
+config/access.php
+config/config.php
+cache/*
+tmp/*
+logs/*
+libs/*
+admin/config/config.php
+admin/cache/*
+admin/logs/*
+admin/tmp/*
