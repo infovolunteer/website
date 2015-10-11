@@ -1,0 +1,25 @@
+
+{include file="theme/infovol/master/meta.html"}
+	
+	<!-- RUNNING GLOBAL VAR -->
+	<script>
+		var basedomain = "{$basedomain}";
+	</script>
+	<!-- HEADER -->
+	<body>
+		<!-- content -->
+	    <div class="content">
+	        <div class="container">
+	        	
+	        	{include file="theme/infovol/master/header.html"}
+
+				<div class="content-btm">
+				    
+				    {include file="theme/infovol/sidebar-left.html"}
+				    <div class="col-md-6">
+				        {$content}
+				    </div>
+				    <div class="clearfix"></div>
+				    
+				</div>
+				{include file="theme/infovol/master/footer.html"}
