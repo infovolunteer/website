@@ -9,3 +9,7 @@ admin/config/config.php
 admin/cache/*
 admin/logs/*
 admin/tmp/*
+index.php
+applications/admin/config/config.php
+applications/default/config/config.php
+applications/default/config/access.php
