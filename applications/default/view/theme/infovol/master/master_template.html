@@ -1,25 +1,20 @@
-
 {include file="theme/infovol/master/meta.html"}
-	
-	<!-- RUNNING GLOBAL VAR -->
-	<script>
-		var basedomain = "{$basedomain}";
-	</script>
-	<!-- HEADER -->
-	<body>
-		<!-- content -->
-	    <div class="content">
-	        <div class="container">
-	        	
-	        	{include file="theme/infovol/master/header.html"}
+{if $page.page=="login"}
+	{$content}
+{else}
+    <div class="wrapper">
 
-				<div class="content-btm">
-				    
-				    {include file="theme/infovol/sidebar-left.html"}
-				    <div class="col-md-6">
-				        {$content}
-				    </div>
-				    <div class="clearfix"></div>
-				    
-				</div>
-				{include file="theme/infovol/master/footer.html"}
+	{include file="theme/infovol/master/header.html"}
+
+	{include file="theme/infovol/master/sidebar.html"}
+     
+      {$content}
+
+	{include file="theme/infovol/master/footer.html"}
+
+    </div><!-- ./wrapper -->
+
+	{include file="theme/infovol/master/plugin-js.html"}
+{/if}
+  </body>
+</html>	

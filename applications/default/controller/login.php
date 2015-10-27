@@ -26,7 +26,10 @@ class login extends Controller {
         
         return $this->loadView(CODEKIR_TEMPLATE .'/login');
     }
-	
+	function register(){
+        
+        return $this->loadView(CODEKIR_TEMPLATE .'/register');
+    }
     /**
      * @todo create new user
      *           

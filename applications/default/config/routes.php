@@ -6,7 +6,7 @@
 */
 
 $ROUTES = array(
-				'home',
+			'home',
 		        'login', 
 		        'member',     
 		        'event'      

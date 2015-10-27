@@ -1,8 +1,18 @@
-{include file="theme/bonfire/meta.html"}
-{include file="theme/bonfire/header.html"}
+{include file="theme/meta.html"}
 
-		{$content}
-		
-		
-{include file="theme/bonfire/footer.html"}
-	
+    <div class="wrapper">
+
+	{include file="theme/header.html"}
+
+	{include file="theme/sidebar.html"}
+     
+      {$content}
+
+	{include file="theme/footer.html"}
+
+    </div><!-- ./wrapper -->
+
+	{include file="theme/plugin-js.html"}
+
+  </body>
+</html>	

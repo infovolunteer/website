@@ -22,7 +22,7 @@ class member extends Controller {
 	function index(){
 
 		// pr($_SESSION);
-    	return $this->loadView(CODEKIR_TEMPLATE. '/profile');
+    	return $this->loadView(CODEKIR_TEMPLATE. '/account/profile');
     }
 	
 	function test()

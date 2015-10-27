@@ -6,10 +6,10 @@ define ('CODEKIR', 'Version 1.0');
 
 define ('CODEKIR_TEMPLATE', 'infovol');
 /* define app path */
-define ('CODEKIR_ROOTPATH', '/home/ovancop/Data/htdocs/infovolunteer/website/');
+define ('CODEKIR_ROOTPATH', '/home/erjoned/Data/xampp/htdocs/infovolunteer/website/');
 
 /* define engine path */
-define ('CODEKIR_PACKAGE', '/home/ovancop/Data/htdocs/codekir/new-codekir/loader/');
+define ('CODEKIR_PACKAGE', '/home/erjoned/Data/xampp/htdocs/new-codekir/loader/');
 
 define ('debug', true);
 /* 
