@@ -9,6 +9,7 @@ $ROUTES = array(
 			'home',
 		        'login', 
 		        'member',     
-		        'event'      
+		        'event',
+		        'account'      
                 );
 ?>

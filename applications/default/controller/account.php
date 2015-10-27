@@ -1,6 +1,6 @@
 <?php
 
-class member extends Controller {
+class account extends Controller {
 	
 	var $models = FALSE;
 	var $view;
@@ -22,7 +22,7 @@ class member extends Controller {
 	function index(){
 
 		// pr($_SESSION);
-    	return $this->loadView(CODEKIR_TEMPLATE. '/account/member');
+    	return $this->loadView(CODEKIR_TEMPLATE. '/account/profile');
     }
 	
 	function test()
