@@ -21,10 +21,13 @@ class event extends Controller {
 	
 	function index(){
 
-		
+		// exit;
     	return $this->loadView(CODEKIR_TEMPLATE. '/event-detail');
     }
-	
+	function add(){
+		
+    	return $this->loadView(CODEKIR_TEMPLATE. '/event-add');
+	}
 	
     function join()
     {

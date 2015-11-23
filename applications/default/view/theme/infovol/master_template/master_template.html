@@ -1,0 +1,20 @@
+{include file="theme/infovol/master_template/meta.html"}
+{if $page.page=="login"}
+	{$content}
+{else}
+    <div class="wrapper">
+
+	{include file="theme/infovol/master_template/header.html"}
+
+	{include file="theme/infovol/master_template/sidebar.html"}
+     
+      {$content}
+
+	{include file="theme/infovol/master_template/footer.html"}
+
+    </div><!-- ./wrapper -->
+
+	{include file="theme/infovol/master_template/plugin-js.html"}
+{/if}
+  </body>
+</html>	
