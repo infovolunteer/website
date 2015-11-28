@@ -24,7 +24,15 @@ class home extends Controller {
 		
     	return $this->loadView(CODEKIR_TEMPLATE. '/home');
     }
-	
+    function detail(){
+
+    	return $this->loadView(CODEKIR_TEMPLATE. '/detail');
+    }
+	function timeline(){
+
+		
+    	return $this->loadView(CODEKIR_TEMPLATE. '/timeline');
+    }
 	function test()
 	{
 		echo 'masuk';
