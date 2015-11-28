@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 28, 2015 at 02:13 PM
+-- Generation Time: Nov 28, 2015 at 05:15 PM
 -- Server version: 5.5.40-0ubuntu0.14.04.1
 -- PHP Version: 5.5.9-1ubuntu4.14
 
@@ -35,14 +35,18 @@ CREATE TABLE IF NOT EXISTS `vol_event` (
   `cover` varchar(100) DEFAULT NULL,
   `open_register` datetime DEFAULT NULL,
   `close_register` datetime DEFAULT NULL,
-  `publish_date` datetime DEFAULT NULL,
+  `start_event` datetime DEFAULT NULL,
+  `end_event` datetime DEFAULT NULL,
   `create_date` datetime DEFAULT NULL,
   `type` int(11) DEFAULT NULL,
   `create_by` int(11) DEFAULT NULL,
+  `organize_by` varchar(100) DEFAULT NULL,
   `category` int(11) DEFAULT NULL,
   `location` varchar(100) DEFAULT NULL,
+  `participant` int(11) NOT NULL DEFAULT '0',
+  `have_question` int(11) NOT NULL DEFAULT '0',
   `data` longtext,
-  `n_status` int(11) NOT NULL DEFAULT '0',
+  `n_status` int(11) NOT NULL DEFAULT '0' COMMENT '0 = unpublish, 1 = draft, 2 = publish, 3 = finish',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
